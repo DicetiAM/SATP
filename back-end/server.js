@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.status(200).send("<h1>Servidor Online</h1>");
 });
 
+app.get('/sobre', (req, res) => {
+    res.status(200).send("<h1>Página Sobre</h1>");
+});
+
 //Rota de teste
 app.get('/t', async(req, res) =>{
     /*const browser = await puppeteer.launch({
